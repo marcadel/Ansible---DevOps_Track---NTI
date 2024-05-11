@@ -1,0 +1,20 @@
+- name: your play name
+  hosts: all
+  tasks:
+  - name: update_cache
+    apt: 
+      update_cache: true
+  - name: Install Nginx
+    apt:
+      name: nginx
+      state: present
+  - name: Copy file to container 
+    copy:
+      src: /home/mark/ansible/day1/index.html
+      dest: /var/www/html/index.html
+  #   notify: Restart Nginx
+  # handlers:
+  - name: Restart Nginx
+    sysvinit:
+      name: nginx
+      state: restarted
