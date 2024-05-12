@@ -1,9 +1,9 @@
 
-# Day 1 - Ansible - DevOps Track - NTI
+#Ansible - DevOps Track - NTI
 A brief description of what we did:
 
 
-
+## DAY 1 :-
 ## INSTALLING ANSIBLE & PREPARING SSH
 - Install ansible
 - Create a new user on control machine and new user on host 1
