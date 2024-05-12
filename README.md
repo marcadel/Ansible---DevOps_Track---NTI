@@ -61,6 +61,12 @@ Use apt module with the package name and version from your variables
 - install a package (get the package name from vars)
 - copy a list of files (index.html & file.css & file.js) from controller to host using loop
 - Restart the service of the installed package
+### TEMPLATES
+- installing a package
+- Copying index.html from controller to host using template
+- copying a list of files (file.css & file.js) from controller to host using loop
+- Restart the service of the installed package
+
 
 
 
