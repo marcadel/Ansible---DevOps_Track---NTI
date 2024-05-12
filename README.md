@@ -1,8 +1,4 @@
-
 # Day 1 - Ansible - DevOps Track - NTI
-A brief description of what we did:
-
-
 
 ## INSTALLING ANSIBLE & PREPARING SSH
 - Install ansible
