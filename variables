@@ -11,5 +11,5 @@ my_packages:
   - {name: "curl", state: "absent"}
 
 file_names:
-  - front/styles.css
-  - front/script.js
+  - styles.css
+  - script.js
