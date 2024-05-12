@@ -33,6 +33,13 @@
 - Can you see your index.html file when you hit host 1 on port 80 ?
 
 ## DAY 2:
+### TAGS
+- Write simple playbook file
+- Add two tasks (apt update – apt install nginx)
+- Add tags to first task: update
+- Add tags to second task: install
+- Run only the (apt update) task
+- Add one task with “tags: always” and run the previous command again
 ###
 
 ## DAY 3:
