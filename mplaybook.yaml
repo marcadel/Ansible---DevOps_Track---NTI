@@ -1,0 +1,33 @@
+- name: day2
+  hosts: web_servers
+  vars_files: 
+  - variables 
+  tasks:
+  - name: task 1
+    tags: always
+    apt: 
+      update_cache: "{{update_cache}}"
+  - name: task 2
+    tags: "{{package_nginx.name}}"
+    apt: 
+      name: "{{package_nginx.name}}"
+    when: ansible_facts['distribution'] == "Ubuntu"
+  - name: task 3
+    tags: "{{package_vim}}"
+    apt: 
+      name: "{{package_vim}}"
+  - name: task 4
+    tags: CentOS
+    package: 
+      name: httpd
+    when: ansible_facts['distribution'] == "CentOS"
+  - name: Restart Nginx
+    sysvinit:
+      name: nginx
+      state: restarted
+    when: ansible_facts['distribution'] == "Ubuntu"
+  - name: Restart httpd
+    sysvinit:
+      name: httpd
+      state: restarted
+    when: ansible_facts['distribution'] == "CentOS"

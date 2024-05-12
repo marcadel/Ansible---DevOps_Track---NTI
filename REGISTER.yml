@@ -1,0 +1,11 @@
+- name: register
+  hosts: web_servers
+  tasks:
+  - name: my task1 with register
+    apt: 
+      name: nginx
+    register: my_result
+  - name: my task2 with register
+    debug:
+      var: my_result
+    when: (my_result.changed == true) or (my_result.failed == false)

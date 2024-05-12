@@ -1,0 +1,15 @@
+my_name: marc
+update_cache: true
+package_vim: vim
+package: nginx
+package_nginx: {name: "nginx", state: "present"}
+package_mariadb: {name: "mariadb-server", state: "latest"}
+package_curl: {name: "curl", state: "absent"}
+my_packages:
+  - {name: "nginx", state: "present"}
+  - {name: "mariadb-server", state: "latest"}
+  - {name: "curl", state: "absent"}
+
+file_names:
+  - front/styles.css
+  - front/script.js

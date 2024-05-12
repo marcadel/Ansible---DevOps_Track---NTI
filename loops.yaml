@@ -1,0 +1,17 @@
+- name: loops
+  hosts: web_servers
+  vars_files: 
+  - variables 
+  tasks:
+  - name: task 1
+    tags: always
+    apt: 
+      update_cache: "{{update_cache}}"
+  - name: task 2
+    tags: loop
+    apt: 
+      name: "{{ item.name }}"
+      state: "{{ item.state }}"
+    loop:
+     "{{my_packages}}"
+  
