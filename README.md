@@ -57,6 +57,12 @@ Use apt module with the package name and version from your variables
 ### REGISTER
 - View the value of your register variable using debug module
 - Restart service if the installation task was changed or was not failed
+### HANDLERS
+- install a package (get the package name from vars)
+- copy a list of files (index.html & file.css & file.js) from controller to host using loop
+- Restart the service of the installed package
+
+
 
 
 ## DAY 3:
