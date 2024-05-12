@@ -1,10 +1,10 @@
 
-#Ansible - DevOps Track - NTI
+# Ansible - DevOps Track - NTI
 A brief description of what we did:
 
 
-## DAY 1 :
-## INSTALLING ANSIBLE & PREPARING SSH
+## DAY 1:
+### INSTALLING ANSIBLE & PREPARING SSH
 - Install ansible
 - Create a new user on control machine and new user on host 1
 - Make sure you can ssh into host 1 (using password)
@@ -32,3 +32,4 @@ A brief description of what we did:
 - Copy index.html from controller to host 1
 - Restart nginx service
 - Can you see your index.html file when you hit host 1 on port 80 ?
+## DAY 2:
