@@ -13,3 +13,9 @@ Define these variables (package_name, package_version)
 - on command line level
 
 Use apt module with the package name and version from your variables
+
+### LOOPS
+- Loop over a list of packages and install latest versions.
+- Loop over a list of packages and use different states as per input.
+
+
