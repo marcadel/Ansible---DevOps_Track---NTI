@@ -16,7 +16,7 @@ Use apt module with the package name and version from your variables
 ### LOOPS
 - Loop over a list of packages and install latest versions.
 - Loop over a list of packages and use different states as per input.
-- ### WHEN
+### WHEN
 - Install nginx or httpd depending on distribution
 - Restart nginx service if distribution is ubuntu.
 - Restart httpd service if distribution is centos.
