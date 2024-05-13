@@ -1,0 +1,12 @@
+- name: Copy files
+  copy:
+    src: "{{ item }}"
+    dest: /var/www/html/
+  loop: "{{ file_names }}"
+  changed_when: true
+  notify: Restart Nginx
+
+- name: Restart Nginx
+  sysvinit:
+    name: nginx
+    state: restarted

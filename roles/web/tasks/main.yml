@@ -1,0 +1,17 @@
+- name: update_cache
+  apt: 
+    update_cache: true
+
+- name: Install Nginx
+  apt:
+    name: "{{package_nginx.name}}"
+    state: "{{package_nginx.state}}"
+  changed_when: true
+  notify: Copy files   
+
+- name: trigger
+  template:
+      src: index.j2
+      dest: /var/www/html/index.html
+  changed_when: true
+  notify: Restart Nginx 

@@ -1,0 +1,4 @@
+- name: day3
+  hosts: web_servers
+  roles:
+  - web
