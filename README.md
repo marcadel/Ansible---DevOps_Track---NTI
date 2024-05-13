@@ -72,4 +72,11 @@ Use apt module with the package name and version from your variables
 
 
 ## DAY 3:
-###
+### ROLES
+- Create your first role with name (web)
+- #### The task book will include:
+- installing a package
+- Copying a file from controller to host using template
+- copying a list of files from controller to host using loop
+- Restart the service of the installed package
+
