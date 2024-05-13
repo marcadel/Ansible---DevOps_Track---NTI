@@ -1,4 +1,4 @@
-# Day 2 - Ansible - DevOps Track - NTI
+# Day 3 - Ansible - DevOps Track - NTI
 ### ROLES
 - Create your first role with name (web)
 - #### The task book will include:
