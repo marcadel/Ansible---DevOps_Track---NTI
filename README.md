@@ -2,7 +2,7 @@
 # Ansible - DevOps Track - NTI
 ### A brief description of what we did during Ansible Course:
 
-## DAY 1:
+## DAY 1 - Branch 1:
 ### INSTALLING ANSIBLE & PREPARING SSH
 - Install ansible
 - Create a new user on control machine and new user on host 1
@@ -32,7 +32,7 @@
 - Restart nginx service
 - Can you see your index.html file when you hit host 1 on port 80 ?
 
-## DAY 2:
+## DAY 2 - Branch 2:
 ### TAGS
 - Write simple playbook file
 - Add two tasks (apt update – apt install nginx)
@@ -71,7 +71,7 @@ Use apt module with the package name and version from your variables
 
 
 
-## DAY 3:
+## DAY 3 - Branch 3:
 ### ROLES
 - Create your first role with name (web)
 - #### The task book will include:
